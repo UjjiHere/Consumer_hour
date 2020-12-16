@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Contact us Customer Reviews">
+    <meta name="keywords" content="customer reviews, honest customer reviews, unbiased customer reviews, contact us customer reviews">
+    <meta name="author" content="Akashdeep Sharma">
+    <title></title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+     <script type="text/javascript" src="scripts/signpage.js"></script>
+  </head>
+  <body>
+    <header>
+  <div class="container">
+    <div id="branding">
+      <h1 ><font color="#e8491d">Customer</font> Reviews</h1>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="shop.html">Reviews</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contactus.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="login.html">Log In</a>
+        </li>
+        <li>
+          <a href="signup.html">Sign up</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+ <form name="myForm" onsubmit="return signcheck()" method="post" action="contactus.php">
+  <div class="contact-form">
+    <h1>Contact Us</h1>
+    <div class="txtb">
+      <label>Full Name :</label>
+      <input type="text" name="username" value="" placeholder="Enter Your Name">
+    </div>
+
+    <div class="txtb">
+      <label>Email :</label>
+      <input type="email" name="email" value="" placeholder="Enter Your Email">
+    </div>
+
+    <div class="txtb">
+      <label>Phone Number :</label>
+      <input type="text" name="number" value="" placeholder="Enter Your Phone Number">
+    </div>
+
+    <div class="txtb">
+      <label>Message :</label>
+      <textarea name="message"></textarea>
+    </div>
+    <input type="submit" value="Send" class="btn" name ="submit"/>    
+  </div>
+</form>
+  </body>
+</html>

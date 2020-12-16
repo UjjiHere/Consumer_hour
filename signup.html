@@ -1,0 +1,78 @@
+<html>
+<head>
+<title> Signup Form</title>   
+    <link rel="stylesheet" type="text/css" href="loginsignup.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Honest Reviews by real customers">
+    <meta name="keywords" content="Sign up customer reviews, login customer reviews">
+    <meta name="author" content="Akashdeep Sharma/Ujjwal Malhotra">
+    <script type="text/javascript" src="scripts/signpage.js"></script>
+</head>
+<body>
+<!--  Contains the title and Nav bar for the Site -->
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1 ><font color="#e8491d">Customer</font> Reviews</h1>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="reviews.html">Reviews</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contactus.html">Contact US</a>
+        </li>
+        <li>
+          <a href="login.html">Log In</a>
+        </li>
+        <li>
+          <a href="signup.html">Sign up</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div id="login-box">
+      <!--     Left box with signup details       -->
+      <div class="left-box">
+        <h1> Sign Up</h1>
+          <form name="myForm" onsubmit="return signcheck()" method="post" action ="signup.php">
+          <input type="text" name="username" id="username" placeholder="Username" required />
+          <input type="text" name="firstname" id="firstname" placeholder="First Name"/>
+          <input type="text" name="lastname" id="lastname" placeholder="Last name"/>
+          <input type="Number" name="mobilenumber" id="mobilenumber" placeholder="Mobile Number"/>
+          <input type="text" name="email" id="email" placeholder="Email"/>
+          <input type="password" name="password" id="psw" placeholder="Password"/>
+        
+          <input type="password" name="password2" id="psw2" placeholder="Retype password"/>
+        
+          <input type="submit" value="Register" name ="submit"/>
+        
+        </div>
+        <!--Social Login -->
+        <div class="right-box">
+          <span class="signinwith">Sign in with<br/>Social Network     </span>
+        
+        <button class="social facebook">Log in with Facebook</button>    
+        <button class="social twitter">Log in with Twitter</button> 
+        <button class="social google">Log in with Google+</button> 
+         </form>   
+        
+        </div>
+        <div class="or">OR</div>
+    </div>
+    <footer>
+  <p>Customer Review Site, Copyright &copy; 2020</p>
+</footer>
+</body>    
+</html>
